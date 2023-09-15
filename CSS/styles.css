@@ -8,6 +8,10 @@ background: linear-gradient(225deg, rgba(52,52,52,0.9976365546218487) 0%, rgba(3
 header{
     background-color: #211d1d;
 }
+.site-principal{
+    padding-left:6%;
+    padding-right: 6%;
+}
 .encabezado{
     display: flex;
     justify-content: space-between;
@@ -41,3 +45,23 @@ header{
     height: 8rem;
     margin-right: 30px;
 }
+.Sangria{
+    margin-left:4%;
+}
+.Sangria li{
+    margin-bottom: 10px;
+}
+.Recetas-Cerveceras ol{
+font-weight: bolder;
+}
+.img-receta{
+    padding-left: 3.5%;
+    width: 85%;
+    height: 35vw; 
+    overflow: hidden;
+}
+.img-receta img{
+    min-width:100%;
+    max-height: auto;
+}
+
