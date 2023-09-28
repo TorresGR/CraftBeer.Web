@@ -4,6 +4,7 @@ body{
     font-family: 'Merriweather', serif;
    background: rgb(52,52,52);
 background: linear-gradient(225deg, rgba(52,52,52,0.9976365546218487) 0%, rgba(33,32,29,1) 78%);
+color: wheat;
 }
 header{
     background-color: #211d1d;
@@ -25,13 +26,10 @@ header{
     padding: 0px 10px;
     font-family: 'Merriweather', serif;
     font-size: 40PX;
-    
-
 }
 .redes, .redes a{
     padding: 5px;
 }
-
 .nav,.nav a{
     display: flex;
     padding: 4px;
@@ -45,6 +43,40 @@ header{
     height: 8rem;
     margin-right: 30px;
 }
+
+/* INTRODUCCION INDEX */
+.inicio-index{
+    background-image: linear-gradient( 0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/Imagenes/camarera-inteligente.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: center;
+    background-size: 100%;
+}
+.inicio-index H1{
+    color: #F09114;
+}
+.inicio-index H3{
+    color: wheat;
+}
+.inicio-texto{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 5% 0% 20% 5%;
+}
+/*  */
+.CARTAS{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+
+
+/* prueba */
 .Sangria{
     margin-left:4%;
 }
@@ -55,13 +87,8 @@ header{
 font-weight: bolder;
 }
 .img-receta{
-    padding-left: 3.5%;
-    width: 85%;
-    height: 35vw; 
-    overflow: hidden;
+    height: 35vw;
+    padding-left: 25px;
 }
-.img-receta img{
-    min-width:100%;
-    max-height: auto;
-}
+
 
