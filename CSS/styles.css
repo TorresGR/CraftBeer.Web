@@ -2,16 +2,16 @@ body{
     font-family: sans-serif;
     margin: 0;
     font-family: 'Merriweather', serif;
-   background: rgb(52,52,52);
-background: linear-gradient(225deg, rgba(52,52,52,0.9976365546218487) 0%, rgba(33,32,29,1) 78%);
-color: wheat;
+    background: rgb(52,52,52);
+    background: linear-gradient(225deg, rgba(52,52,52,0.9976365546218487) 0%, rgba(33,32,29,1) 78%);
+    color: wheat;
 }
 header{
     background-color: #211d1d;
 }
 .site-principal{
-    padding-left:6%;
-    padding-right: 6%;
+    padding-left:10%;
+    padding-right:10%;
 }
 .encabezado{
     display: flex;
@@ -67,28 +67,65 @@ header{
     padding: 5% 0% 20% 5%;
 }
 /*  */
-.CARTAS{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
-}
 
 
 
 
 /* prueba */
-.Sangria{
-    margin-left:4%;
+.Recetas-Cerveceras h1,h2{
+    color:#F09114;
+    padding-top: 5%;
 }
-.Sangria li{
-    margin-bottom: 10px;
+#txt-ocultar{
+    display: none;
 }
-.Recetas-Cerveceras ol{
-font-weight: bolder;
+#txt-mostrar{
+    display: block;
 }
+
 .img-receta{
     height: 35vw;
-    padding-left: 25px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+button{
+    background: transparent;
+    border-style: none;
+    cursor: pointer;
+    filter: invert(100%) sepia(0%) saturate(7489%) hue-rotate(209deg) brightness(100%) contrast(102%);
+    margin-top:-25px;
+    height: 60px;
+    overflow: hidden;
+}
+.btn-ver{
+display: flex;
+height: 60px;
+}
+.btn-ocultar{
+display: none;
+height: 60px;
 }
 
 
+
+
+
+.contenedor {
+    max-width: 400px; /* Ancho máximo del contenedor */
+  }
+  
+  .parrafo .texto {
+    max-height: 0; /* Altura inicialmente cero para ocultar el texto */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    transition: max-height 0.5s ease-in-out; /* Agrega una transición suave al expandir/cerrar */
+    margin-bottom: 10px; /* Espacio entre párrafos */
+  }
+  
+  .parrafo.expandido .texto {
+    max-height: 1000px; /* Altura máxima cuando se expande (ajusta según tus necesidades) */
+  }
