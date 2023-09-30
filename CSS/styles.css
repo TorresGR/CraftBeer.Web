@@ -85,6 +85,38 @@ header{
 }
 
 .img-receta{
+<<<<<<< HEAD
+    padding-left: 3.5%;
+    width: 85%;
+    height: 35vw; 
+    overflow: hidden;
+    
+}
+.img-receta img{
+    min-width:100%;
+    max-height: auto;
+}
+.button {
+    color: rgb(255, 255, 255);
+    font-size: 15px; line-height:
+    15px; padding: 11px;
+    border-radius: 10px;
+    font-family: Georgia, serif; 
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68); 
+    font-style: normal; 
+    font-variant: normal;
+    text-transform: none;
+    background-image: radial-gradient(rgb(75, 31, 164) 0%, rgb(26, 59, 203) 0%, rgb(32, 16, 117) 100%); 
+    box-shadow: rgba(0, 0, 0, 0) -100px -100px 0px 0px; 
+    border: 0px solid rgb(28, 110, 164); 
+    display: inline-block;}
+    .myButton:hover {
+    background: #4B1FA4; }
+    .myButton:active {
+    background: #201075; 
+}
+=======
     height: 35vw;
 }
 .btn{
@@ -112,6 +144,7 @@ height: 60px;
 }
 
 
+>>>>>>> ae2a6a996dde026b8df2056a8b1b4bad883c1ef3
 
 
 
