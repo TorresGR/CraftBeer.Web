@@ -1,110 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/CSS/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>    
-        <div class="encabezado">
-            <div class="Inicio">
-                <a href="index.html">
-                   <img class="logo" src="/Imagenes/LOGO.IMG.png" alt="Logo">
-                </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/CSS/styles.css">
+        <link rel="stylesheet" href="/CSS/nav-recetas.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    </head>
+    <body class="mi-web">
+        <header>    
+            <div class="encabezado">
+                <div class="Inicio">
+                    <a href="index.html">
+                    <img class="logo" src="/Imagenes/LOGO.IMG.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="inicio">
+                    <h2>CRAFT BEER </h2>
+                    <img src="/Imagenes/hop_5589136.png" alt="hop" height="64">
+                </div>
+                <div class="redes">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="/Imagenes/facebook.png" alt="Facebook" ></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="/Imagenes/instagram.png" alt="Instagram"></a>
+                    <a href="https://wa.me/3482640232" target="_blank"><img src="/Imagenes/whatsap.png" alt="Whatsapp"></a>
+                </div>
             </div>
-            <div class="inicio">
-                <h2>CRAFT BEER </h2>
-                <img src="/Imagenes/hop_5589136.png" alt="hop" height="64">
-            </div>
-            <div class="redes">
-                <a href="https://www.facebook.com/" target="_blank"><img src="/Imagenes/facebook.png" alt="Facebook" ></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="/Imagenes/instagram.png" alt="Instagram"></a>
-                <a href="https://wa.me/3482640232" target="_blank"><img src="/Imagenes/whatsap.png" alt="Whatsapp"></a>
-            </div>
+            <nav class="mi-nav">
+                <a href="/index.html" class="link">Inicio</a>
+                <a href="./Recetas.html" class="link">Receta</a>
+                <a href="./Calculadora.html" class="link">Calculadora</a>
+                <a href="./Contacto.html" class="link">Contacto</a>
+            </nav>
+        </header>
+        <div id="sidemenu" class="menu-collapsed">
+            <p>RECETAS</p>
+            <ul class="nav nav-tabs nav-recetas">
+                <li class="nav-item">
+                  <a class="nav-link active btnSessionIpa"  href="#">
+                    <img src="/Imagenes/Iconos_Cerveza/SessionIPA.png" alt="Session ipa">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active btnAmber" href="#">
+                    <img src="/Imagenes/Iconos_Cerveza/Amber.png" alt="Amber">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btnDunke" href="#">
+                    <img src="/Imagenes/Iconos_Cerveza/Dunkel.png" alt="Dunkel">
+                  </a>
+                </li>
+                <li class="nav-item btnKolsch">
+                    <a class="nav-link" href="#">
+                      <img src="/Imagenes/Iconos_Cerveza/Kolsch.png" alt="Kolsch">
+                    </a>
+                </li>
+                <li class="nav-item btnStout">
+                    <a class="nav-link" href="#">
+                      <img src="/Imagenes/Iconos_Cerveza/Stout.png" alt="Stout">
+                    </a>
+                </li>
         </div>
-        <nav class="nav">
-            <a href="/index.html" class="link">Inicio</a>
-            <a href="./Recetas.html" class="link">Receta</a>
-            <a href="./Calculadora.html" class="link">Calculadora</a>
-            <a href="./Contacto.html" class="link">Contacto</a>
-        </nav>
-    </header>
 
-    <section class="site-principal">
-        <div class="Recetas-Cerveceras">
-            <span>
-                <h1 id="titulo">Receta cerveza Session IPA</h1>
-                <h4 id="txt-ocultar">La cerveza Session IPA es un estilo dentro de las American IPA que se desarrollo en sus inicios como una cerveza de temporada (session). Desarrollada con una baja graduación alcohólica y se bebe con facilidad durante la época calurosa de verano a temperatura muy fría. Es una cerveza lupulada pero a su vez cítrica y refrescante. Se usan lupulos americanos que le dan un aroma frutal.</h4>
-            </span>
-            <div class="img-receta">
-                <img class="img-receta" src="/Imagenes/Imagenes_Cerveza/session ipa.jpg" alt="session IPA">
+        <section class="site-principal">
+
+                <div class="sessionIpa">
+                    <div class="Recetas-Cerveceras">
+                        <span class="parrafo">
+                            <h1 id="titulo">Receta cerveza Session IPA</h1>
+                            <h4 id="txt-ocultar" class="texto">La cerveza Session IPA es un estilo dentro de las American IPA que se desarrollo en sus inicios como una cerveza de temporada (session). Desarrollada con una baja graduación alcohólica y se bebe con facilidad durante la época calurosa de verano a temperatura muy fría. Es una cerveza lupulada pero a su vez cítrica y refrescante. Se usan lupulos americanos que le dan un aroma frutal.</h4>
+                        </span>
+                        <div class="img-receta">
+                            <img class="img-receta" src="/Imagenes/Imagenes_Cerveza/session ipa.jpg" alt="session IPA">
+                        </div>
+        
+                        <div class="parrafo">
+                            <div class="texto" id="txt-ocultar">
+                                <span>
+                                    <h2> Ingredientes para elaborar Session IPA</h2>
+                                    <h4>Elabora con esta receta 23 litros de cerveza Session IPA. Para elaborar otras cantidades de cerveza ajustar los siguientes ingredientes.</h4>
+                                </span>
+                                <span>
+                                    <h2>Maltas</h2>
+                                    <h4>2,7 kilos de Malta Pale</h4>
+                                    <h4>227 gramos de Malta Crystal clara 10ºL</h4>
+                                    <h4>113 gramos de Malta Belgian Special</h4>
+                                </span>
+                                <span><h2>Lúpulo</h2>
+                                    <h4>46 gramos de lúpulo Liberty. Añadir al inicio de la ebullición.</h4>
+                                    <h4>56 gramos de lúpulo Cascade. Añadir 10 minutos antes de apagar el fuego.</h4>
+                                    <h4>28 gramos de lúpulo Cascade. Añadir al apagar el fuego.</h4>
+                                    <h4>14 gramos de lúpulo Simcoe. Añadir en el dry hopping.</h4>
+                                </span>
+                                <span>
+                                    <h2>Agentes clarificantes</h2>
+                                    <h4>Opcional, usar Musgo Irlandés o Protofolc 15 minutos antes de terminar la ebullición como clarificante.</h4>
+                                </span>
+                                <span>
+                                    <h2>Levadura</h2>
+                                    <h4>Usar una levadura para Ale Americana</h4>
+                                </span>
+                                <span>
+                                    <h2>¿Qué es una Session IPA?</h2>
+                                    <h4>Las Session IPA, tienen características parecidas a las IPA americanas, en el aroma, ya que los lúpulos americanos le dan unos toques cítricos a la cerveza, que se destacan con la técnica del dry hopping. Además estas cervezas con amargor y fuerte aroma y sabor a lúpulo se hacen perfectas para el verano si se sirven muy frías, ya que los sabores cítricos las hacen muy refrescantes y su poco porcentaje alcohólico las convierte en una bebida perfecta.</h4>
+                                </span>
+                                <span>
+                                    <h2>Cómo hacer una Session IPA</h2>
+                                    <h4>Las Session IPA, se elaboran de forma parecida a las IPA americanas con lúpulos americanos que dan ese sabor cítrico característico. Pero el resultado final tiene que ser una cerveza mucho más ligera de alcohol y algo más suave en el sabor. Si quieres saber cómo realizar el dry hopping puedes verlo en nuestro <a style="color: aliceblue;" href="https://www.youtube.com/watch?v=9V8CvGvEdGg&ab_channel=HacerCervezaArtesanal" target="_blank">Canal de youtube.</a></h4>
+                                    <ul>
+                                        <li><b>Maceración:</b> Macerar las maltas durante 60 minutos a 65 ºC. Usar 14 litros de agua.</li>
+                                        <li><b>Ebullición:</b> Lavar y recircular hasta obtener el mosto. Añadir agua hasta alcanzar los 27 litros. Hervir durante 60 minutos, añadiendo los lúpulos tal y como se explica anteriormente.</li>
+                                        <li><b>Fermentación:</b> Añadir la levadura y fermentar a 22 ºC. Añadir el lúpulo del dry hopping al 4 día de feremtnación y dejarlo durante 6 días.</li>
+                                        <li><b>Acondicionamiento:</b> Madurar durante 3 semanas a 12 ºC. </li>
+                                    </ul>
+                                </span>
+                                <span>
+                                    <h2>Características de la cerveza Session IPA</h2>
+                                    <h4>Con esta receta las características resultantes de tu Session IPA serán las siguientes:</h4>
+                                </span>    
+                                <ul>
+                                    <li><b>Gravedad original</b>: 1044</li>
+                                    <li><b>Gravedad final</b>: 1014</li>
+                                    <li><b>Proceso de elaboración</b>: 4 semanas</li>
+                                    <li><b>Alcohol</b>: 4%</li>
+                                    <li><b>Amargor</b>: 46 IBU</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="Amber">
+            <div class="Recetas-Cerveceras">
+                <span class="parrafo">
+                    <h1 id="titulo">Receta Amber ale</h1>
+                    <h4 id="txt-ocultar" class="texto">La cerveza Amber Ale es un estilo de cerveza americano con un carácter malteado y tique de caramelo. Es una cerveza híbrida que se fermenta con levadura de Lager pero a temperaturas altas. Esta cerveza es bastante amarga pero tiene un final puro. Se caracteriza por un color cobre rojizo.</h4>
+                </span>
+                <div class="img-receta">
+                    <img class="img-receta" src="/Imagenes/Imagenes_Cerveza/amber-ale.jpg" alt="Amber">
+                </div>
+
+                <div class="parrafo">
+                    <div class="texto" id="txt-ocultar">
+                        <span>
+                            <h2>Ingredientes para elaborar una cerveza Amber Ale</h2>
+                            <h4>La siguiente receta esta pensada para elaborar 23 litros de Amber Ale americana. Para elaborar otras cantidades de cerveza ajustar los siguientes ingredientes.</h4>
+                        </span>
+                        <span>
+                            <h2>Maltas</h2>
+                            <h4>3 kilos de Malta Pale</h4>
+                            <h4>2 kilos de Malta Munich</h4>
+                            <h4>250 gramos de Malta Cristal</h4>
+                            <h4>250 gramos de Malta Cristal claro</h4>
+                            <h4>200 gramos de Malta Special B</h4>
+                        </span>
+                        <span><h2>Lúpulo</h2>
+                            <h4>15 gramos de lúpulo Columbus. Se añade al comenzar la ebullición.</h4>
+                            <h4>10 gramos de lúpulo Chinook. Se añade los 15 últimos minutos de ebullición.</h4>
+                            <h4>10 gramos de lúpulo Columbus. Se añade los 10 últimos minutos de ebullición.</h4>
+                            <h4>10 gramos de lúpulo Chinook. Se añade los 5 últimos minutos de ebullición.</h4>
+                            <h4>45 gramos de lúpulo Columbus. Se añade al apagar el fuego.</h4>
+                            <h4>50 gramos de lúpulo Chinook. Se añade al apagar el fuego.</h4>
+                            <h4>30 gramos de lúpulo Columbus. En el dry hopping.</h4>
+                            <h4>30 gramos de lúpulo Chinook. En el dry hopping.</h4>
+                            
+                        </span>
+                        <span>
+                            <h2>Agentes clarificantes</h2>
+                            <h4>Opcional, usar Musgo Irlandés o Protofolc 15 minutos antes de terminar la ebullición como clarificante.</h4>
+                        </span>
+                        <span>
+                            <h2>Levadura</h2>
+                            <h4>Usar una levadura de cerveza para Ale American West coast.</h4>
+                        </span>
+                        <span>
+                            <h2>¿Qué es una Amber Ale Beer?</h2>
+                            <h4>Las cervezas Amber Ale son cervezas ámbar de fermentación alta. Son cervezas tostadas, pues se usan maltas tostadas para darles intensidad de sabor y aroma. Son cervezas americanas en las que se usan lúpulos americanos que le dan un carácter resinoso y de melaza.</h4>
+                            <h4>El color suele variar entre el rojo oscuro y el cobre intenso. Son transparentes y con buena retención de espuma. De sabor amargo y con un final limpio. El aroma destaca por ser bastante lupulado y con notas malteadas de caramelo.</h4>
+                        </span>
+                        <span>
+                            <h2>Cómo hacer una Amber Ale</h2>
+                            <h4>Elaborar esta cerveza es relativamente fácil, simplemente hay que prestar especial atención a la adición de los lúpulos, ya que son varias adiciones. Intentar no oxidar la cerveza para que no se pierdan los aromas intensos de los lúpulos.</h4>
+                            <ul>
+                                <li><b>Maceración:</b> Macerar las maltas durante 60 minutos a 65 ºC. Usar 20 litros de agua.</li>
+                                <li><b>Ebullición:</b> Lavar y recircular hasta obtener el mosto. Añadir agua hasta alcanzar los 27 litros. Hervir durante 60 minutos, añadiendo los lúpulos tal y como se explica anteriormente.</li>
+                                <li><b>Fermentación:</b>Añadir levadura de Ale americana y fermentar a 18 – 20 ºC.</li>
+                                <li><b>Dry hopping:</b>Realizar dry hopping durante 3 o 4 días.</li>
+                                <li><b>Acondicionamiento:</b> Madurar durante 5 semanas a 12 ºC. </li>
+                            </ul>
+                        </span>
+                        <span>
+                            <h2>Características de la cerveza Amber Ale</h2>
+                            <h4>Sigueindo esta receta las características resultantes de tu Amber Ale serán las siguiente</h4>
+                        </span>    
+                        <ul>
+                            <li><b>Gravedad original</b>: 1060</li>
+                            <li><b>Gravedad final</b>: 1014</li>
+                            <li><b>Proceso de elaboración</b>: 6 semanas</li>
+                            <li><b>Alcohol</b>: 6%</li>
+                            <li><b>Amargor</b>: 41 IBU</li>
+                            <li><b>Color:</b>30 EBC</li>
+                            <li><b>Agua total:</b></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="Recetas-Cerveceras" id="txt-ocultar">
-            <span>
-                <h2> Ingredientes para elaborar Session IPA</h2>
-                <h4>Elabora con esta receta 23 litros de cerveza Session IPA. Para elaborar otras cantidades de cerveza ajustar los siguientes ingredientes.</h4>
-            </span>
-            <span>
-                <h2>Maltas</h2>
-                <h4>2,7 kilos de Malta Pale</h4>
-                <h4>227 gramos de Malta Crystal clara 10ºL</h4>
-                <h4>113 gramos de Malta Belgian Special</h4>
-            </span>
-            <span><h2>Lúpulo</h2>
-                <h4>46 gramos de lúpulo Liberty. Añadir al inicio de la ebullición.</h4>
-                <h4>56 gramos de lúpulo Cascade. Añadir 10 minutos antes de apagar el fuego.</h4>
-                <h4>28 gramos de lúpulo Cascade. Añadir al apagar el fuego.</h4>
-                <h4>14 gramos de lúpulo Simcoe. Añadir en el dry hopping.</h4>
-            </span>
-            <span>
-                <h2>Agentes clarificantes</h2>
-                <h4>Opcional, usar Musgo Irlandés o Protofolc 15 minutos antes de terminar la ebullición como clarificante.</h4>
-            </span>
-            <span>
-                <h2>Levadura</h2>
-                <h4>Usar una levadura para Ale Americana</h4>
-            </span>
-            <span>
-                <h2>¿Qué es una Session IPA?</h2>
-                <h4>Las Session IPA, tienen características parecidas a las IPA americanas, en el aroma, ya que los lúpulos americanos le dan unos toques cítricos a la cerveza, que se destacan con la técnica del dry hopping. Además estas cervezas con amargor y fuerte aroma y sabor a lúpulo se hacen perfectas para el verano si se sirven muy frías, ya que los sabores cítricos las hacen muy refrescantes y su poco porcentaje alcohólico las convierte en una bebida perfecta.</h4>
-            </span>
-            <span><h2>Cómo hacer una Session IPA</h2>
-                <h4>Las Session IPA, se elaboran de forma parecida a las IPA americanas con lúpulos americanos que dan ese sabor cítrico característico. Pero el resultado final tiene que ser una cerveza mucho más ligera de alcohol y algo más suave en el sabor. Si quieres saber cómo realizar el dry hopping puedes verlo en nuestro <a href="https://www.youtube.com/watch?v=9V8CvGvEdGg&ab_channel=HacerCervezaArtesanal" target="_blank">Canal de youtube</a></h4>
-            </span>
-            <ul>
-                <li><b>Gravedad original</b>: 1044</li>
-                <li><b>Gravedad final</b>: 1014</li>
-                <li><b>Proceso de elaboración</b>: 4 semanas</li>
-                <li><b>Alcohol</b>: 4%</li>
-                <li><b>Amargor</b>: 46 IBU</li>
-            </ul>
-
-        </div>
-        <div class="btn">
-            <div>
-                <span style=display:flex id="ver"><p> VER RECETA COMPLETA</p></span>
-                <span style=display:none id="ocultar"><p> OCULTAR RECETA</p></span>
             </div>
-            <div>
-                <button>
-                    <img  id="ver" src="/Imagenes/1492533499-arrow-26_83280.svg" alt="extender" class="btn-ver">
-                    <img id="ocultar" src="/Imagenes/1492533504-arrow-25_83266.svg" alt="extender" class="btn-ocultar">
-                </button>
+
+
+            <div class="Munich">
+                <div class="Recetas-Cerveceras">
+                    <span class="parrafo">
+                        <h1 id="titulo">Receta Munich Dunkel</h1>
+                        <h4 id="txt-ocultar" class="texto">La cerveza Munich Dunkel, es la característica cerveza negra de la capital de Baviera. Con notas de chocolate y caramelo que casan perfectamente con la dulzura rica y malteada de la malta Munich que se usa en su elaboración. Es una cerveza tipo lager oscura, fermentada a bajas temperaturas.</h4>
+                    </span>
+                    <div class="img-receta">
+                        <img class="img-receta" src="/Imagenes/Imagenes_Cerveza/munich-dunkel.jpg" alt="Amber">
+                    </div>
+    
+                    <div class="parrafo">
+                        <div class="texto" id="txt-ocultar">
+                            <span>
+                                <h2>Ingredientes necesarios para hacer cerveza Munich Dunkel</h2>
+                                <h4>Con la siguiente receta podrás elaborar 23 litros de Munich Dunkel alemana. Para elaborar otros volumenes ajustar las cantidades de los siguientes ingredientes.</h4>
+                            </span>
+                            <span>
+                                <h2>Maltas</h2>
+                                <h4>2,2 kilos de Malta Pilsen</h4>
+                                <h4> 2,2 kilos de Malta Munich</h4>
+                                <h4> 80 gramos de Malta Carafa Special III</h4>
+                            </span>
+                            <span><h2>Lúpulo</h2>
+                                <h4>30 gramos de lúpulo Tettnang. Añadir al comienzo de la ebullición.</h4>
+                                <h4>50 gramos de lúpulo Hallertauer Mittlefrüh. Se añade los últimos 15 minutos de ebullición.</h4>
+                            </span>
+                            <span>
+                                <h2>Agentes clarificantes</h2>
+                                <h4>Se puede usar Musgo Irlandés o Protofolc 15 minutos antes de terminar la ebullición como clarificante para ayudar en el Whirlpool.</h4>
+                            </span>
+                            <span>
+                                <h2>Levadura</h2>
+                                <h4>Usar una levadura de fermentación baja como la Fermentis Saflager W34/70.</h4>
+                            </span>
+                            <span>
+                                <h2>Cómo hacer una Munich Dunkel</h2>
+                                <h4>La cerveza Munich Dunkel se fermenta a temperaturas bajas, 12 ºC sería lo ideal. También es bueno macerar el grano por decocción triple para mejorar el malteado y dar a la cerveza un color más intenso.</h4>
+                                <ul>
+                                    <li><b>Maceración:</b> Macerar por decocción triple* la malta durante 1 hora para obtener el mosto. Usar 14 litros de agua.</li>
+                                    <li><b>Ebullición:</b> Al mosto obtenido agregarle agua hasta alcanzar los 27 litros. Hervir durante 75 minutos añadiendo los lúpulos en los momentos indicados anteriormente.</li>
+                                    <li><b>Fermentación:</b>Añadir levadura y fermentar durante unos 7 días a baja temperatura.</li>
+                                    <li><b>Acondicionamiento:</b> Madurar durante 4 semanas a 3 ºC. </li>
+                                </ul>
+                            </span>
+                            <span>
+                                <h2>Características de la cerveza Munich Dunkel</h2>
+                                <h4>Las características esperadas de esta Munich Dunkel según la receta son las siguientes:</h4>
+                            </span>    
+                            <ul>
+                                <li><b>Gravedad original:</b> 1050/li>
+                                <li><b>Gravedad final</b>: 1012</li>
+                                <li><b>Proceso de elaboración</b>: 5 semanas</li>
+                                <li><b>Alcohol</b>:  5%</li>
+                                <li><b>Amargor</b>: 30 IBU</li>
+                                <li><b>Color:</b> 40 EBC</li>
+                                <li><b>Agua total:</b>33 litros</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="Kolsch">
+                    <div class="Recetas-Cerveceras">
+                        <span class="parrafo">
+                            <h1 id="titulo">Receta de la cerveza híbrida Kölsch</h1>
+                            <h4 id="txt-ocultar" class="texto">La cerveza Kölsch es una especialidad alemana. Éste estilo esta dentro de las cervezas híbridas claras. Como cerveza híbrida se elabora a fermentación alta como una Ale y se madura a temperaturas bajas como una Lager. Tiene un sutil aroma lupulado y un carácter limpio.</h4>
+                        </span>
+                        <div class="img-receta">
+                            <img class="img-receta" src="/Imagenes/Imagenes_Cerveza/kolsch.jpg" alt="Kolsch">
+                        </div>
+        
+                        <div class="parrafo">
+                            <div class="texto" id="txt-ocultar">
+                                <span>
+                                    <h2>Ingredientes para cerveza Kölsch</h2>
+                                    <h4>La siguiente receta ésta diseñada para elaborar 23 litros de cerveza Kölsch. Para otro volumen de producción ajusta las siguientes cantidades de los ingredientes. Al final de la receta podrás encontrar una versión con extracto de malta</h4>
+                                </span>
+                                <span>
+                                    <h2>Maltas</h2>
+                                    <h4>4 kilos de Malta Pilsner</h4>
+                                    <h4>500 gramos Malta Carapils</h4>
+                                </span>
+                                <span><h2>Lúpulo</h2>
+                                    <h4> 44 gramos de lúpulo Spalt Selecct. Se añade al comenzar la ebullición.</h4>
+                                    <h4> 22 gramos de Tettnang. Añadir los últimos 5 minutos de ebullición.</h4>
+                                    <h4>44 gramos de Tettnang. Agregar al apagar el fuego.</h4>
+                                </span>
+                                <span>
+                                    <h2>Agentes clarificantes</h2>
+                                    <h4>Se puede agregar Musgo Irlandés o Protofolc 15 minutos antes de terminar la ebullición como clarificante para ayudar en el Whirlpool.</h4>
+                                </span>
+                                <span>
+                                    <h2>Levadura</h2>
+                                    <h4>Usar una levadura para cerveza Kölsch.</h4>
+                                </span>
+                                <span>
+                                    <h2>Qué es una cerveza Kölsch</h2>
+                                    <h4>La cerveza tipo Kölsch es una variante híbrida de las cervezas Pale. Éstas cervezas híbridas usan levaduras de fermentación baja del tipo Lager, pero fermentan a temperaturas de Ale para dar un sabor con más cuerpo pero con un final limpio típico de las Lager.</h4>
+                                    <h4>El resultado del la Kölsch es una cerveza clara muy pálida y limpia con una espuma blanca, a simple vista parece una Lager. Pero se diferencia en su sabor y en su aroma, donde la presencia del lúpulo es más importante.</h4>
+                                </span>
+                                <span>
+                                    <h2>Cómo hacer cerveza Kölsch</h2>
+                                    <h4>Al elaborar la Kölsch se se busca un color límpio dificil de conseguir con las cervezas que fermentan a altas temperaturas. Por ello se debe filtrar lo mejor posible y sobre todo hacer el cold crash durante 3 semanas para que nos quede un color cristalino.</h4>
+                                    <ul>
+                                        <li><b>Maceración:</b>  Macerar las maltas a 65 ºC durante 1 hora para obtener el mosto. Usar 11,25 litros de agua.</li>
+                                        <li><b>Ebullición:</b>Ese mosto obtenido se mezcla con agua hasta llegar a 27 litros. Subir la temperatura hasta que comience a hervir y añadir los lúpulos tal y como se explica anteriormente. Duración total de la ebullición 70 minutos.</li>
+                                        <li><b>Fermentación:</b>Fermentar durante unos 7 días a 18 ºC.</li>
+                                        <li><b>Acondicionamiento:</b>Cold crash durante 3 semanas a 12 ºC. </li>
+                                    </ul>
+                                </span>
+                                <span>
+                                    <h2>Características de la cerveza Kölsch</h2>
+                                    <h4>La cerveza Kölsch obtenida usando esta receta debería tener las siguientes características:</h4>
+                                </span>    
+                                <ul>
+                                    <li><b>Gravedad original:</b> 1046</li>
+                                    <li><b>Gravedad final</b>: 1011</li>
+                                    <li><b>Proceso de elaboración</b>: 4 semanas</li>
+                                    <li><b>Alcohol:</b> 4,6%</li>
+                                    <li><b>Amargor:</b> 25 IBU</li>
+                                    <li><b>Color:</b>7,2 EBC</li>
+                                    <li><b>Agua total:</b>31,5 litros</li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Stout">
+                    <div class="Recetas-Cerveceras">
+                        <span class="parrafo">
+                            <h1 id="titulo">Receta imperial stout. Cerveza negra de sabor fuerte</h1>
+                            <h4 id="txt-ocultar" class="texto">La Imperial Stout es un tipo de cerveza ale oscura que se comenzó a elaborar en Inglaterra para exportarla a la corte imperial de los zares rusos, de ahí viene su nombre. Se caracteriza por un elevado índice alcohólico y de lúpulo. De hecho se dice que esos altos niveles servían para conservarla y evitar que se congelara.</h4>
+                        </span>
+                        <div class="img-receta">
+                            <img class="img-receta" src="/Imagenes/Imagenes_Cerveza/stout.jpg" alt="Kolsch">
+                        </div>
+        
+                        <div class="parrafo">
+                            <div class="texto" id="txt-ocultar">
+                                <span>
+                                    <h2>Ingredientes de la Imperial Stout</h2>
+                                    <h4>Con los siguientes ingredientes podrás elaborar 23 litros de cerveza Imperial Stout. Para otros volúmenes de cerveza ajusta la cantidad de los ingredientes. Al final de esta receta tienes la versión con extracto de malta.</h4>
+                                </span>
+                                <span>
+                                    <h2>Maltas</h2>
+                                    <h4> 7 kilos de Malta Pale.</h4>
+                                    <h4> 500 gramos de Malta Cristal.</h4>
+                                    <h4> 200 gramos de Cebada tostada.</h4>
+                                    <h4>150 gramos de Malta Chocolate.</h4>
+                                    <h4>150 gramos de Malta Carafa Special.</h4>
+                                </span>
+                                <span><h2>Lúpulo</h2>
+                                    <h4> 61 gramos de Challenger, se añade al inicio de la ebullición.</h4>
+                                    <h4> 61 gramos de Golding, se añade los últimos 30 minutos de hervido.</h4>
+                                </span>
+                                <span>
+                                    <h2>Agentes clarificantes</h2>
+                                    <h4> Añade los agentes clarificantes como Protofolc o Musgo Irlandés 15 minutos antes de terminar el hervido.</h4>
+                                </span>
+                                <span>
+                                    <h2>Levadura</h2>
+                                    <h4>Usa una levadura para ale inglesa como la Safale S-04 le vendrá perfecta a tu Stout.</h4>
+                                </span>
+                                <span>
+                                    <h2>Receta Imperial Stout</h2>
+                                    <h4>Con el éxito que estaban teniendo las Stouts en Irlanda y en concreto en la ciudad de Dublín, los ingleses comenzaron a elaborar cervezas a partir de la receta de la Stout irlandesa, ya que sus Porter comenzaron a perder mercado.</h4>
+                                    <h4>En concreto la Imperial Stout se comenzó a elaborar para exportar a la corte de los zares en Rusia. Por tanto debía ser una cerveza que soportara los largos viajes y que no se congelara con el frío. Por eso se añadió más cantidad de lúpulo y alcohol.</h4>
+                                    <h4>El resultado es una cerveza muy fuerte, con un color negro oscuro muy intenso. Fuertes aromas al lúpulo y a la malta y cervezas con índices alcohólicos superiores al 8%.</h4>
+                                </span>
+                                <span>
+                                    <h2>Pasos para hacer una cerveza Imperial Stout</h2>
+                                    <h4>Las cervezas Imperial Stout son cervezas que llevan diferentes tipos de malta, esta receta en concreto lleva 5 tipos de malta. Pero su elaboración no tiene ningún misterio ni requiere ninguna técnica especial. Presta especial atención durante la maceración para extraer todos los azúcares de los granos de cereal.</h4>
+                                    <ul>
+                                        <li><b>Maceración:</b> Bañar el grano en 20 litros de agua para macerar y extraer el mosto. Tiempo requerido 1 hora a 65 ºC. Recircular y lavar bien para extraer todos los azúcares.</li>
+                                        <li><b>Ebullición:</b> Añadir agua al mosto hasta obtener 27 litros y comenzar e hervir. Añadir los lúpulos tal y como se indica anteriormente. Duración total de l hervido 1 hora y 15 minuto.</li>
+                                        <li><b>Fermentación:</b> Fermentar con levaduras para cerveza ale, de fermentación alta, a unos 20 ºC.</li>
+                                        <li><b>Acondicionamiento:</b> Madurar la Imperial Stout a 12 ºC durante 15 semanas para obtener los sabores complejos de esta cerveza.</li>
+                                    </ul>
+                                </span>
+                                <span>
+                                    <h2>Características de la Imperial Stout según receta</h2>
+                                    <h4>Las características que debe presentar tu Imperial Stout siguiendo esta receta, son las siguientes:</h4>
+                                </span>    
+                                <ul>
+                                    <li><b>Gravedad original:</b> 1080</li>
+                                    <li><b>Gravedad final</b>: 1019</li>
+                                    <li><b>Proceso de elaboración:</b> 16 semanas</li>
+                                    <li><b>Alcohol:</b> 8,2%</li>
+                                    <li><b>Amargor:</b> 60 IBU</li>
+                                    <li><b>Color:</b> 76,3 EBC</li>
+                                    <li><b>Agua total:</b>35 litros.</li>
+                                </ul>
+                                <span>
+                                    <h2>Cerveza Stout con café</h2>
+                                    <h4>También hay otra versión de cerveza Stout elaborada con café. Puedes ver cómo hacer una cerveza negra Stout con café en el siguiente vídeo de nuestro canal de Youtube.</h4>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2yDRjjt1dl8?si=F154NpXfNMwAl6NR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </span>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="btn">
+                <div>
+                    <span style=display:flex id="ver" class="texto"><p> VER RECETA COMPLETA</p></span>
+                    <span style=display:none id="ocultar" class="texto"><p> OCULTAR RECETA</p></span>
+                </div>
+                <div>
+                    <button class="btn-mostrar">
+                        <img id="ver" src="/Imagenes/1492533499-arrow-26_83280.svg" alt="extender" class="btn-ver">
+                        <img id="ocultar" style="display:none;" src="/Imagenes/1492533504-arrow-25_83266.svg" alt="extender" class="btn-ocultar">
+                    </button>
+                </div>
             </div>
-        </div>
-    </section>
-
-
-    <footer>
-        <h4>Derechos de autor <i>#QuienTeConoce</i> </h4>
-    </footer>
-<script src="/JS/Funciones.js"></script>
-</body>
+        </section>
+        <footer style="margin-top: 180px;">
+            <h4>Derechos de autor <i>#QuienTeConoce</i> </h4>
+        </footer>
+        <script src="/JS/botonDinamico.js"> console.log('allanio');</script>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>

@@ -1,0 +1,19 @@
+.nav-recetas{
+   display: grid;
+   position:absolute;
+   margin-left: -32px;
+   list-style: none;
+   justify-content: space-between;
+   height: -webkit-fill-available;
+}
+
+.nav-recetas img{
+    width: 6vw;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 4px;
+}
+.menu-collapsed p{
+    padding-left: 8px;
+    font-size:1.5vw;
+}

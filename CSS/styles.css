@@ -1,4 +1,4 @@
-body{
+.mi-web{
     font-family: sans-serif;
     margin: 0;
     font-family: 'Merriweather', serif;
@@ -30,7 +30,7 @@ header{
 .redes, .redes a{
     padding: 5px;
 }
-.nav,.nav a{
+.mi-nav,.mi-nav a{
     display: flex;
     padding: 4px;
     color: #F09114;
@@ -68,64 +68,13 @@ header{
 }
 /*  */
 
-
-
-
-
-/* prueba */
-.Recetas-Cerveceras h1,h2{
-    color:#F09114;
-    padding-top: 5%;
-}
-#txt-ocultar{
-    display: none;
-}
-#txt-mostrar{
-    display: block;
-}
-
-.img-receta{
-<<<<<<< HEAD
-    padding-left: 3.5%;
-    width: 85%;
-    height: 35vw; 
-    overflow: hidden;
-    
-}
-.img-receta img{
-    min-width:100%;
-    max-height: auto;
-}
-.button {
-    color: rgb(255, 255, 255);
-    font-size: 15px; line-height:
-    15px; padding: 11px;
-    border-radius: 10px;
-    font-family: Georgia, serif; 
-    font-weight: 400;
-    text-decoration: none solid rgb(68, 68, 68); 
-    font-style: normal; 
-    font-variant: normal;
-    text-transform: none;
-    background-image: radial-gradient(rgb(75, 31, 164) 0%, rgb(26, 59, 203) 0%, rgb(32, 16, 117) 100%); 
-    box-shadow: rgba(0, 0, 0, 0) -100px -100px 0px 0px; 
-    border: 0px solid rgb(28, 110, 164); 
-    display: inline-block;}
-    .myButton:hover {
-    background: #4B1FA4; }
-    .myButton:active {
-    background: #201075; 
-}
-=======
-    height: 35vw;
-}
 .btn{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-button{
+.btn-mostrar{
     background: transparent;
     border-style: none;
     cursor: pointer;
@@ -135,30 +84,48 @@ button{
     overflow: hidden;
 }
 .btn-ver{
-display: flex;
-height: 60px;
+    display: flex;
+    height: 60px;
 }
 .btn-ocultar{
-display: none;
-height: 60px;
+    display: none;
+    height: 60px;
+}
+b{
+    color: rgb(0, 100, 187);
 }
 
 
->>>>>>> ae2a6a996dde026b8df2056a8b1b4bad883c1ef3
-
+/* prueba */
+.Recetas-Cerveceras h1,h2{
+    color:#F09114;
+    padding-top: 5%;
+}
+.img-receta{
+    padding-left: 3%;
+    width: 85%;
+    height: 30vw; 
+    overflow: hidden;
+    
+}
+.img-receta img{
+    min-width:100%;
+    max-height: auto;
+}
 
 
 .contenedor {
-    max-width: 400px; /* Ancho máximo del contenedor */
+    max-width: 400px; 
   }
   
   .parrafo .texto {
-    max-height: 0; /* Altura inicialmente cero para ocultar el texto */
-    overflow: hidden; /* Oculta el texto que se desborda */
-    transition: max-height 0.5s ease-in-out; /* Agrega una transición suave al expandir/cerrar */
-    margin-bottom: 10px; /* Espacio entre párrafos */
+    max-height: 0; 
+    overflow: hidden; 
+    transition: max-height 0.5s ease-in-out;
+    margin-bottom: 10px; 
   }
   
   .parrafo.expandido .texto {
-    max-height: 1000px; /* Altura máxima cuando se expande (ajusta según tus necesidades) */
+    max-height: 1000px; 
   }
+  
